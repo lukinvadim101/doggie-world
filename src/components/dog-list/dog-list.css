@@ -1,13 +1,18 @@
 .dog-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
 .doggie-range__wrapper{
-  max-width: 20%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+label {
+  width: 250px;
+  text-align: center;
 }

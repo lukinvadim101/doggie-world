@@ -26,10 +26,10 @@ export default class DogList extends Component {
   }
 
   handleChange = (e) => {
-    this.rangeDog(+e.target.value)
+    this.rangeDog(+e.target.value);
   }
 
-  rangeDog(num){
+  rangeDog = (num) => {
     this.setState({
       value: num,
     })
@@ -37,7 +37,7 @@ export default class DogList extends Component {
 
   componentDidUpdate(prevProps, prevState){
     if(this.state.value !== prevState.value) {
-      setTimeout(this.updateDog(this.state.value), 3000)
+      this.updateDog(this.state.value)
     }
   }
 
